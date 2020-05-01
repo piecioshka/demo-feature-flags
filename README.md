@@ -6,28 +6,30 @@
 
 <https://piecioshka.github.io/feature-flags-example/>
 
-## Explanation
+## Usage
 
 ```js
+// feature-flags.js
 const featureFlags = {
     "enableSecretLink": false
 };
 
-export const isFeatureFlagEnabled = (name) => {
-    return featureFlags[name];
-};
-
+export const isFeatureFlagEnabled = (name) => featureFlags[name];
 export const getAll = () => featureFlags;
 ```
 
 ```js
-// any-file.js
+// any JavaScript file
 ...
 if (isFeatureFlagEnabled('enableSecretLink')) {
     displaySecretLink();
 }
 ...
 ```
+
+## Resources
+
+[Article by Martin Fowler](https://www.martinfowler.com/articles/feature-toggles.html)
 
 ## License
 
