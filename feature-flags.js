@@ -1,6 +1,9 @@
 const featureFlags = {
-    "enableSecretLink": true
+    'secretLink': true,
+    'specialFeature': true,
+    'modernToast': false,
 };
 
-export const isFeatureFlagEnabled = (name) => featureFlags[name];
+export const isFeatureEnabled = (name) => featureFlags[name];
+export const setFeature = (name, status) => featureFlags[name] = status;
 export const getAll = () => featureFlags;

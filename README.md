@@ -11,17 +11,18 @@
 ```js
 // feature-flags.js
 const featureFlags = {
-    "enableSecretLink": false
+    'secretLink': true,
+    'specialFeature': true,
+    'modernToast': false,
 };
 
-export const isFeatureFlagEnabled = (name) => featureFlags[name];
-export const getAll = () => featureFlags;
+export const isFeatureEnabled = (name) => featureFlags[name];
 ```
 
 ```js
 // any JavaScript file
 ...
-if (isFeatureFlagEnabled('enableSecretLink')) {
+if (isFeatureEnabled('secretLink')) {
     displaySecretLink();
 }
 ...

@@ -18,11 +18,11 @@ function displayAllFeatureFlags(flags) {
 }
 
 async function main() {
-    const { isFeatureFlagEnabled, getAll } = await import('./feature-flags.js');
+    const { isFeatureEnabled, getAll } = await import('./feature-flags.js');
 
     displayAllFeatureFlags(getAll());
 
-    if (isFeatureFlagEnabled('enableSecretLink')) {
+    if (isFeatureEnabled('secretLink')) {
         displaySecretLink();
     }
 }
