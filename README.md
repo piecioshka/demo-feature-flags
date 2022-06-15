@@ -1,19 +1,19 @@
-# feature-flags-example
+# demo-feature-flags
 
-:ledger: Do you know how to use Feature Flags?
+🚁 Do you know how to use Feature Flags?
 
 ## Demo 🎉
 
-<https://piecioshka.github.io/feature-flags-example/>
+<https://piecioshka.github.io/demo-feature-flags/>
 
 ## Usage
 
 ```js
 // feature-flags.js
 const featureFlags = {
-    'secretLink': true,
-    'specialFeature': true,
-    'modernToast': false,
+  secretLink: true,
+  specialFeature: true,
+  modernToast: false,
 };
 
 export const isFeatureEnabled = (name) => featureFlags[name];
