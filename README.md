@@ -2,7 +2,7 @@
 
 🚁 Do you know how to use Feature Flags?
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/demo-feature-flags/>
 
